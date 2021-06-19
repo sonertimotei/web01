@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<title>Responsive Website</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header>
+			<a href="#" class="logo">AMC</a>
+			<div class="menuToggle" onclick="toggleMenu();"></div>
+			<ul class="navigation">
+				<li><a href="#banner" onclick="toggleMenu();">Home</a></li>
+				<li><a href="#about" onclick="toggleMenu();">About</a></li>
+				<li><a href="#services" onclick="toggleMenu();">Services</a></li>
+				<li><a href="#client" onclick="toggleMenu();">Client</a></li>
+				<li><a href="#testimonials" onclick="toggleMenu();">Testimonials</a></li>
+				<li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+			</ul>
+		</header>
+	<!-- Banner -->
+	<div class="banner" id="banner">
+		
+		<img src="assets/bg.jpg" alt="bg img">
+		<div class="content" data-0-top="opacity:0;left:100px;" data-200-top="opacity:1;left:0px;">
+			<h2> Success By Design</h2>
+			<p>One of the leading design firms in the world, AMC has crafted compelling brand experiences for more than 20 years. From reinventing Apple’s Mac OS design system to collaborating on Adobe’s packaging and identity, their caliber of work resonates on a global level that’s tough to match.</p>
+	</div>
+	</div>
+	<!-- About -->
+	<section class="about" id="about">
+		<div class="contentBx">
+			<h2 class="heading" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:500px;">About Us</h2>
+			<p class="text" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:500px;">We are a creative brand consultancy. We’ve been collaborating with leading organizations to solve brand and business challenges since 1979. Our team across seven locations uses the power of creativity to transform businesses for the better.
+			</p>
+		</div>
+		<div class="imgBx" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:200px;"></div> 
+	</section>
+	<!-- Services -->
+	<section class="services" id="services">
+		<h2 class="heading" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:500px;">Our Services</h2>
+		<p class="text" data-center-center="opacity:1;right:0;" data-0-bottom="opacity:0;right:200px;">Crafting brand strategies with real-life applicability using robust proprietary tools allows us to translate original ideas into uniquely impactful brand strategies defining the future of brands across all dimensions.</p>
+		<div class="container">
+			<div class="serviceBx" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:500px;">
+				<div>
+					<img src="assets/icon1.png">
+					<h2>Deseign</h2>
+				</div>
+			</div>	
+			<div class="serviceBx" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:500px;">	
+				<div>
+					<img src="assets/icon2.png">
+					<h2>Development</h2>
+				</div>
+			</div>	
+			<div class="serviceBx" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:500px;">
+				<div>
+					<img src="assets/icon3.png">
+					<h2>Branding</h2>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Technology -->
+	<section class="technology" id="client">
+		<div class="contentBx" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:-400px;">
+			<h2 class="heading">We use cutting edge technology</h2>
+			<p class="text">Designing delightful user interactions, whether analog, digital, or spatial, is how we use the power of creativity to transform brands.</p>
+		</div>
+		<div class="imgBx" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:-400px;">
+			<img src="assets/tech.png">
+		</div>
+	</section>
+	<!-- Client -->
+	<section class="client">
+		<h2 class="heading" data-center-center="opacity:1;right:0;" data-0-bottom="opacity:0;right:-100px;">Our Client</h2>
+		<!--<p class="text" data-center-center="opacity:1;right:0;" data-0-bottom="opacity:0;right:-100px;">더 많은 친구들을 불러도 부담이 없고, 초대받은 친구들이 전보다 편하게 놀다 갈 수 있었으면 하고 바랐어요.</p>-->
+		<div class="imgBx">
+			<img src="assets/brand1.png" data-center-center="top:0;" data-0-bottom="top:100px;">
+			<img src="assets/brand2.png" data-center-center="top:0;" data-0-bottom="top:150px;">
+			<img src="assets/brand3.png" data-center-center="top:0;" data-0-bottom="top:200px;">
+			<img src="assets/brand4.png" data-center-center="top:0;" data-0-bottom="top:250px;">
+		</div>
+	</section>
+	<!-- Testimonials -->
+	<section class="testimonials" id="testimonials">
+		<h2 class="heading">What Our Client says</h2>
+		<div class="container">
+			<div class="contentBx" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:-400px;">
+				<div>
+					<p>The quality of their work was higher than any other designer that we’ve worked with.</p><br>
+					<h3>Harris John</h3>
+				</div>
+			</div>
+			
+			<div class="contentBx" data-center-center="opacity:1;right:0;" data-0-bottom="opacity:0;right:-400px;">
+				<div>
+					<p>We were impressed with their subject matter expertise and the quality of their work</p><br>
+					<h3>Nancy Johanson</h3>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Contact -->
+	<section class="contact">
+		<h2 class="heading" data-center-center="opacity:1;right:0;" data-0-bottom="opacity:0;right:-400px;"> Contact Us</h2>
+		<p class="text" data-center-center="opacity:1;right:0;" data-0-bottom="opacity:0;right:-400px;">Questions about an issue? E-mail Customer Service · Have us call you · Chat with Customer Service.</p>
+	</section>
+	
+	<section class="about" id="contact">
+		<div class="contentBx redbg">
+			<div class="form" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:-400px;">
+				<div class="inputBx">
+					<input type="text" name="" placeholder="Full Name">
+				</div>
+				<div class="inputBx">
+					<input type="text" name="" placeholder="Email Address">
+				</div>
+				<div class="inputBx">
+					<input type="text" name="" placeholder="Mobile No.">
+				</div>
+				<div class="inputBx">
+					<textarea placeholder="Write your message here"></textarea>
+				</div>
+				<div class="inputBx">
+					<input type="submit" name="" value="Send">
+				</div>
+			</div>
+		</div>
+		<div class="imgBx2"></div> 
+	</section>
+	<!-- Footer -->
+	<section class="footer">
+		<p class="text">Design & Developed By Melvin</p>
+		<ul>
+			<p class="text">Follow us on</p>
+			<li><a href="#"><img src="assets/facebook.png"></a></li>
+			<li><a href="#"><img src="assets/twitter.png"></a></li>
+			<li><a href="#"><img src="assets/linkedin.png"></a></li>
+		</ul>
+	</section>
+	<script src="skrollr.js"></script>
+	<script type="text/javascript">
+	window.addEventListener('scroll', function(){
+		const header = document.querySelector('header');
+		header.classList.toggle("sticky", window.scrollY > 0);
+	});
+		function toggleMenu(){
+			const menuToggle = document.querySelector('.menuToggle');
+			const navigation = document.querySelector('.navigation');
+			menuToggle.classList.toggle('active');
+			navigation.classList.toggle('active');
+	}
+	var s = skrollr.init();
+	
+	</script>
+</body>
+</html>

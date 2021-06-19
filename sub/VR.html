@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<title>Personal Portfolio Responsive Website Design</title>
+	<link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+	<div class="toggle" onclick="toggleMenu();"></div>
+	
+	<section class="services" id="services">
+	<div class="title">
+		 <h2>VR App 01 (Educational)</h2>
+		<br>
+		<img src="../images/img07.png" style=" max-width: 100%; height: auto;">
+			<!--<p>'또한 이번 앨범에는 국내 최고의 뮤직비디오 프로덕션인 VM프로젝트(Celebrity, Flu), 플립이블(라일락, 에필로그), 써니비주얼(Coin)이 함께 참여하여 각각의 개성 있고 감각적인 영상들과 아이유의 음악이 만나 막강한 시너지를 발휘했다.</p>-->
+		
+		</div>
+		<div class="content">
+			<div class="workBx">
+				<div class="imgBx">
+					<img src="../assets/edu00.gif" alt="Computer man" style="width:500px; max-width: 100%; height: auto; padding: 10px;">
+				</div>
+			</div>
+			<div class="workBx">
+				<div class="imgBx">
+					<img src="../assets/edu01.gif" alt="Computer man" style="width:500px; max-width: 100%; height: auto; padding: 10px; ">
+				</div>
+			</div>
+						<div class="workBx">
+				<div class="imgBx">
+					<img src="../assets/edu02.gif" alt="Computer man" style="width:500px; max-width: 100%; height: auto; padding: 10px;">
+				</div>
+			</div>
+						<div class="workBx">
+				<div class="imgBx">
+					<img src="../assets/edu04.gif" alt="Computer man" style="width:500px; max-width: 100%; height: auto; padding: 10px; ">
+				</div>
+			</div>
+			<div class="workBx">
+				<div class="imgBx">
+					<img src="../assets/edu05.gif" alt="Computer man" style="width:500px; max-width: 100%; height: auto; padding: 10px; ">
+				</div>
+			</div>
+			<div class="workBx">
+				<div class="imgBx">
+					<img src="../assets/edu06.gif" alt="Computer man" style="width:500px; max-width: 100%; height: auto; padding: 10px; ">
+				</div>
+			</div>
+		</div>
+
+	<div class="title">
+		 <h2>VR App 02 (Zombie FPS)</h2>
+		<br>
+		<img src="../images/img08.png" style=" max-width: 100%; height: auto;">
+			<!--<p>'또한 이번 앨범에는 국내 최고의 뮤직비디오 프로덕션인 VM프로젝트(Celebrity, Flu), 플립이블(라일락, 에필로그), 써니비주얼(Coin)이 함께 참여하여 각각의 개성 있고 감각적인 영상들과 아이유의 음악이 만나 막강한 시너지를 발휘했다.</p>-->
+		
+		</div>
+		<div class="content">
+			<div class="workBx">
+				<div class="imgBx">
+					<img src="../assets/zombie00.gif" alt="Computer man" style="width:500px; max-width: 100%; height: auto; padding: 10px;">
+				</div>
+			</div>
+			<div class="workBx">
+				<div class="imgBx">
+					<img src="../assets/zombie01.gif" alt="Computer man" style="width:500px; max-width: 100%; height: auto; padding: 10px; ">
+				</div>
+			</div>
+						<div class="workBx">
+				<div class="imgBx">
+					<img src="../assets/zombie02.gif" alt="Computer man" style="width:500px; max-width: 100%; height: auto; padding: 10px;">
+				</div>
+			</div>
+						<div class="workBx">
+				<div class="imgBx">
+					<img src="../assets/zombie03.gif" alt="Computer man" style="width:500px; max-width: 100%; height: auto; padding: 10px; ">
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<div class="copyright">
+		<p>Copyright ©2021 Melvin 멜빈 . All Right Reserved .</p>
+	</div>
+	
+	<div class="sidebar">
+		<ul class="menu">
+			<li><a href="../index.html" onclick="toggleMenu();">Home</a></li>
+			<li><a href="../sub/web01/index.html" onclick="toggleMenu();">Website 01</a></li>
+			<li><a href="../sub/web02/index.html" onclick="toggleMenu();">Website 02</a></li>
+			<li><a href="../sub/web03/index.html" onclick="toggleMenu();">Website 03</a></li>
+			<li><a href="../sub/web04/index.html" onclick="toggleMenu();">Website 04</a></li>
+			<li><a href="../sub/sharkmarine.html" onclick="toggleMenu();">3D animation</a></li>
+			<li><a href="../sub/VR.html" onclick="toggleMenu();">VR App</a></li>
+			<li><a href="../sub/gd.html" onclick="toggleMenu();">Graphic Design</a></li>	
+		</ul>
+	</div>
+	<script>
+		function toggleMenu(){
+			const menuToggle = document.querySelector('.toggle');
+			const sidebar = document.querySelector('.sidebar');
+			menuToggle.classList.toggle('active');
+			sidebar.classList.toggle('active');
+		}
+	</script>
+	
+</body>
+</html>

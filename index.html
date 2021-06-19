@@ -1,160 +1,231 @@
 <!doctype html>
-<html lang="en">
+<html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="utf-8">
-<title>Responsive Website</title>
+<title>Personal Portfolio Responsive Website Design</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-	<header>
-			<a href="#" class="logo">AMC</a>
-			<div class="menuToggle" onclick="toggleMenu();"></div>
-			<ul class="navigation">
-				<li><a href="#banner" onclick="toggleMenu();">Home</a></li>
-				<li><a href="#about" onclick="toggleMenu();">About</a></li>
-				<li><a href="#services" onclick="toggleMenu();">Services</a></li>
-				<li><a href="#client" onclick="toggleMenu();">Client</a></li>
-				<li><a href="#testimonials" onclick="toggleMenu();">Testimonials</a></li>
-				<li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
-			</ul>
-		</header>
-	<!-- Banner -->
-	<div class="banner" id="banner">
-		
-		<img src="assets/bg.jpg" alt="bg img">
-		<div class="content" data-0-top="opacity:0;left:100px;" data-200-top="opacity:1;left:0px;">
-			<h2> Success By Design</h2>
-			<p>One of the leading design firms in the world, AMC has crafted compelling brand experiences for more than 20 years. From reinventing Apple’s Mac OS design system to collaborating on Adobe’s packaging and identity, their caliber of work resonates on a global level that’s tough to match.</p>
-	</div>
-	</div>
-	<!-- About -->
-	<section class="about" id="about">
+	<div class="toggle" onclick="toggleMenu();"></div>
+	
+	<section class="banner" id="home">
+		<div class="imgSidebar">
+			<img src="images/bg.png">
+		</div>
 		<div class="contentBx">
-			<h2 class="heading" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:500px;">About Us</h2>
-			<p class="text" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:500px;">We are a creative brand consultancy. We’ve been collaborating with leading organizations to solve brand and business challenges since 1979. Our team across seven locations uses the power of creativity to transform businesses for the better.
-			</p>
+		<h5 class="logoText">My Portfolio</h5>
+		<div>
+			<h4><span>Hello</span>, I'm</h4>
+			<h2>Melvin Tan</h2>
+			<h4>I'm a Developer</h4>
+			<p>Graduated from Singapore University of Social Science with Bachelor of Science in Digital Media. Experienced in multimedia and passionate about emerging Technology</p>
+			<a href="#about" class="btn">About Me</a>
 		</div>
-		<div class="imgBx" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:200px;"></div> 
+			<!--<ul class="sci">
+			<li><a href="#"><img src="images/facebook.png"></a></li>
+			<li><a href="#"><img src="images/twitter.png"></a></li>
+			<li><a href="#"><img src="images/instagram.png"></a></li>
+		</ul>-->
+		</div>
+		
 	</section>
-	<!-- Services -->
+	
+	<section class="about" id="about">
+		<div class="title white">
+		 <h2>About Me</h2>
+			<!--<p>'아이유(IU)' 정규 5집 [LILAC] “안녕 꽃잎 같은 안녕”“내 맘에 아무 의문이 없어 난 이 다음으로 가요”</p>-->
+		</div>
+		<div class="content">
+		<div class="textBx">
+			<p class="mainText">
+			A developer and designer with a meticulous attitude towards programming and design. I have experienced in various programming langugages suchs as C++ , C# and python. Besides that i am also quite proffcient in multimedia software such as photoshop, illustrator or blender for design and 3D animation. To find out more about some of my previous work, please take a look at the work section. In my previous company, i was involved a project that provides a new system service overhaul for a client. The tasks that i was assigned to were front and back end support which include the database, test and debug and on site support. As a Technophile ,I've always strife to improve myself by learning new technology and skillsets. Currently,i am studying more about cloud computing and blockchain</p>
+			</div>
+			<div class="imgBx">
+				<img src="images/bg1.png">
+			</div>
+		</div>
+	</section>
+	
 	<section class="services" id="services">
-		<h2 class="heading" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:500px;">Our Services</h2>
-		<p class="text" data-center-center="opacity:1;right:0;" data-0-bottom="opacity:0;right:200px;">Crafting brand strategies with real-life applicability using robust proprietary tools allows us to translate original ideas into uniquely impactful brand strategies defining the future of brands across all dimensions.</p>
-		<div class="container">
-			<div class="serviceBx" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:500px;">
-				<div>
-					<img src="assets/icon1.png">
-					<h2>Deseign</h2>
-				</div>
-			</div>	
-			<div class="serviceBx" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:500px;">	
-				<div>
-					<img src="assets/icon2.png">
-					<h2>Development</h2>
-				</div>
-			</div>	
-			<div class="serviceBx" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:500px;">
-				<div>
-					<img src="assets/icon3.png">
-					<h2>Branding</h2>
-				</div>
+	<div class="title">
+		 <h2>Skills</h2>
+			<!--<p>'또한 이번 앨범에는 국내 최고의 뮤직비디오 프로덕션인 VM프로젝트(Celebrity, Flu), 플립이블(라일락, 에필로그), 써니비주얼(Coin)이 함께 참여하여 각각의 개성 있고 감각적인 영상들과 아이유의 음악이 만나 막강한 시너지를 발휘했다.</p>-->
+		</div>
+		<div class="content">
+			<div class="servicesBx">
+				<img src="images/icon1.png">
+				<h2>Web Design</h2>
+			</div>
+			<div class="servicesBx">
+				<img src="images/icon2.png">
+				<h2>Web Development</h2>
+			</div><br>
+			<div class="servicesBx">
+				<img src="images/icon3.png">
+				<h2>Android Apps</h2>
+			</div>
+			<!--<div class="servicesBx">
+				<img src="images/icon4.png">
+				<h2>Photography</h2>
+			</div>-->
+			<!--<div class="servicesBx">
+				<img src="images/icon5.png">
+				<h2>Content Writing</h2>
+			</div>-->
+			<div class="servicesBx">
+				<img src="images/icon6.png">
+				<h2>Video Editing</h2>
+			</div>
+			<div class="servicesBx">
+				<img src="images/icon8.png">
+				<h2>3D Animation</h2>
+			</div>
+			<div class="servicesBx">
+				<img src="images/icon7.png">
+				<h2>AWS Cloud</h2>
 			</div>
 		</div>
-	</section>
-	<!-- Technology -->
-	<section class="technology" id="client">
-		<div class="contentBx" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:-400px;">
-			<h2 class="heading">We use cutting edge technology</h2>
-			<p class="text">Designing delightful user interactions, whether analog, digital, or spatial, is how we use the power of creativity to transform brands.</p>
-		</div>
-		<div class="imgBx" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:-400px;">
-			<img src="assets/tech.png">
-		</div>
-	</section>
-	<!-- Client -->
-	<section class="client">
-		<h2 class="heading" data-center-center="opacity:1;right:0;" data-0-bottom="opacity:0;right:-100px;">Our Client</h2>
-		<!--<p class="text" data-center-center="opacity:1;right:0;" data-0-bottom="opacity:0;right:-100px;">더 많은 친구들을 불러도 부담이 없고, 초대받은 친구들이 전보다 편하게 놀다 갈 수 있었으면 하고 바랐어요.</p>-->
-		<div class="imgBx">
-			<img src="assets/brand1.png" data-center-center="top:0;" data-0-bottom="top:100px;">
-			<img src="assets/brand2.png" data-center-center="top:0;" data-0-bottom="top:150px;">
-			<img src="assets/brand3.png" data-center-center="top:0;" data-0-bottom="top:200px;">
-			<img src="assets/brand4.png" data-center-center="top:0;" data-0-bottom="top:250px;">
-		</div>
-	</section>
-	<!-- Testimonials -->
-	<section class="testimonials" id="testimonials">
-		<h2 class="heading">What Our Client says</h2>
-		<div class="container">
-			<div class="contentBx" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:-400px;">
-				<div>
-					<p>The quality of their work was higher than any other designer that we’ve worked with.</p><br>
-					<h3>Harris John</h3>
-				</div>
-			</div>
-			
-			<div class="contentBx" data-center-center="opacity:1;right:0;" data-0-bottom="opacity:0;right:-400px;">
-				<div>
-					<p>We were impressed with their subject matter expertise and the quality of their work</p><br>
-					<h3>Nancy Johanson</h3>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Contact -->
-	<section class="contact">
-		<h2 class="heading" data-center-center="opacity:1;right:0;" data-0-bottom="opacity:0;right:-400px;"> Contact Us</h2>
-		<p class="text" data-center-center="opacity:1;right:0;" data-0-bottom="opacity:0;right:-400px;">Questions about an issue? E-mail Customer Service · Have us call you · Chat with Customer Service.</p>
 	</section>
 	
-	<section class="about" id="contact">
-		<div class="contentBx redbg">
-			<div class="form" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:-400px;">
-				<div class="inputBx">
-					<input type="text" name="" placeholder="Full Name">
+	<section class="work" id="work">
+	<div class="title">
+		<h2>Recent Work</h2>
+		<p>Here are some of my past works which includes responsive website, 3D animation and VR app</p>
+		</div>
+		<div class="content">
+			<a href="sub/web01/index.html"><div class="workBx">
+				<div class="imgBx">
+					<img src="images/img01.png">
 				</div>
-				<div class="inputBx">
-					<input type="text" name="" placeholder="Email Address">
+				<div class="textBx">
+					<h3>Website 01</h3>
 				</div>
-				<div class="inputBx">
-					<input type="text" name="" placeholder="Mobile No.">
+			</div></a>
+			<a href="sub/web02/index.html"><div class="workBx">
+				<div class="imgBx">
+					<img src="images/img02.png">
 				</div>
-				<div class="inputBx">
-					<textarea placeholder="Write your message here"></textarea>
+				<div class="textBx">
+					<h3>Website 02</h3>
 				</div>
-				<div class="inputBx">
-					<input type="submit" name="" value="Send">
+			</div></a>
+			<a href="sub/web03/index.html"><div class="workBx">
+				<div class="imgBx">
+					<img src="images/img03.png">
+				</div>
+				<div class="textBx">
+					<h3>Website 03</h3>
+				</div>
+			</div></a>
+			<a href="sub/web04/index.html"><div class="workBx">
+				<div class="imgBx">
+					<img src="images/img04.png">
+				</div>
+				<div class="textBx">
+					<h3>Website 04</h3>
+				</div>
+			</div></a>
+			<a href="sub/sharkmarine.html"><div class="workBx">
+				<div class="imgBx">
+					<img src="images/img05.png">
+				</div>
+				<div class="textBx">
+					<h3>3D Animation 01</h3>
+				</div>
+			</div></a>
+			<a href="sub/sharkmarine.html"><div class="workBx">
+				<div class="imgBx">
+					<img src="images/img06.png">
+				</div>
+				<div class="textBx">
+					<h3>3D Animation 02</h3>
+				</div>
+			</div></a>
+			<a href="sub/VR.html"><div class="workBx">
+				<div class="imgBx">
+					<img src="images/img07.png">
+				</div>
+				<div class="textBx">
+					<h3>VR App 01</h3>
+				</div>
+			</div></a>
+			<a href="sub/VR.html"><div class="workBx">
+				<div class="imgBx">
+					<img src="images/img08.png">
+				</div>
+				<div class="textBx">
+					<h3>VR App 02</h3>
+				</div>
+			</div></a>
+					<a href="sub/gd.html"><div class="workBx">
+				<div class="imgBx">
+					<img src="images/img09.png">
+				</div>
+				<div class="textBx">
+					<h3>Graphic Design</h3>
+				</div>
+			</div></a>
+		</div>
+	</section>
+	
+	<section class="contact" id="contact">
+	<div class="title white">
+		<h2>Contact Me</h2>
+		<p>Email: tanmelvin@hotmail.sg</p>
+		</div>
+		<!--<div class="contactForm">
+			<div class="row">
+				<div class="col50">
+					<input type="text" name="" placeholder="First Name">
+				</div>
+				<div class="col50">
+					<input type="text" name="" placeholder="Last Name">
 				</div>
 			</div>
-		</div>
-		<div class="imgBx2"></div> 
+			<div class="row">
+				<div class="col50">
+					<input type="text" name="" placeholder="Email">
+				</div>
+				<div class="col50">
+				<input type="text" name="" placeholder="Mobile No.">
+				</div>
+			</div>
+			<div class="row">
+			<div class="col100">
+				<textarea placeholder="Message"></textarea>
+				</div>
+			</div>
+			<div class="row">
+			<div class="col100">
+				<input type="submit" value="send">
+				</div>
+			</div>
+		</div>-->
 	</section>
-	<!-- Footer -->
-	<section class="footer">
-		<p class="text">Design & Developed By Melvin</p>
-		<ul>
-			<p class="text">Follow us on</p>
-			<li><a href="#"><img src="assets/facebook.png"></a></li>
-			<li><a href="#"><img src="assets/twitter.png"></a></li>
-			<li><a href="#"><img src="assets/linkedin.png"></a></li>
+	
+	<div class="copyright">
+		<p>Copyright ©2021 Melvin 멜빈 . All Right Reserved .</p>
+	</div>
+	
+	<div class="sidebar">
+		<ul class="menu">
+			<li><a href="#home" onclick="toggleMenu();">Home</a></li>
+			<li><a href="#about" onclick="toggleMenu();">About</a></li>
+			<li><a href="#services" onclick="toggleMenu();">Services</a></li>
+			<li><a href="#work" onclick="toggleMenu();">Work</a></li>
+			<li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
 		</ul>
-	</section>
-	<script src="skrollr.js"></script>
-	<script type="text/javascript">
-	window.addEventListener('scroll', function(){
-		const header = document.querySelector('header');
-		header.classList.toggle("sticky", window.scrollY > 0);
-	});
-		function toggleMenu(){
-			const menuToggle = document.querySelector('.menuToggle');
-			const navigation = document.querySelector('.navigation');
-			menuToggle.classList.toggle('active');
-			navigation.classList.toggle('active');
-	}
-	var s = skrollr.init();
+	</div>
 	
+	<script>
+		function toggleMenu(){
+			const menuToggle = document.querySelector('.toggle');
+			const sidebar = document.querySelector('.sidebar');
+			menuToggle.classList.toggle('active');
+			sidebar.classList.toggle('active');
+		}
 	</script>
 </body>
 </html>

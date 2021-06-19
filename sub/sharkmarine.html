@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<title>Personal Portfolio Responsive Website Design</title>
+	<link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+	
+	<div class="toggle" onclick="toggleMenu();"></div>
+	
+	<section class="services" id="services">
+	<div class="title">
+		 <h2>3D Animation: Sharkmarine tour</h2>
+		
+		</div>
+		<div class="content">
+		<video width="640"  controls>
+  <source src="../assets/sharkmarine.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>	
+		</div>
+		<br>
+		<div class="title">
+		 <h2>3D Animation: Drone Transport</h2>
+		
+		</div>
+		<div class="content">
+		<video width="640"  controls>
+  <source src="../assets/PDT.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>		
+		</div>
+	
+	</section>
+	
+	<div class="copyright">
+		<p>Copyright ©2021 Melvin 멜빈 . All Right Reserved .</p>
+	</div>
+	
+	<div class="sidebar">
+		<ul class="menu">
+			<li><a href="../index.html" onclick="toggleMenu();">Home</a></li>
+			<li><a href="../sub/web01/index.html" onclick="toggleMenu();">Website 01</a></li>
+			<li><a href="../sub/web02/index.html" onclick="toggleMenu();">Website 02</a></li>
+			<li><a href="../sub/web03/index.html" onclick="toggleMenu();">Website 03</a></li>
+			<li><a href="../sub/web04/index.html" onclick="toggleMenu();">Website 04</a></li>
+			<li><a href="../sub/sharkmarine.html" onclick="toggleMenu();">3D animation</a></li>
+			<li><a href="../sub/VR.html" onclick="toggleMenu();">VR App</a></li>
+			<li><a href="../sub/gd.html" onclick="toggleMenu();">Graphic Design</a></li>	
+		</ul>
+	</div>
+	
+	<script>
+		function toggleMenu(){
+			const menuToggle = document.querySelector('.toggle');
+			const sidebar = document.querySelector('.sidebar');
+			menuToggle.classList.toggle('active');
+			sidebar.classList.toggle('active');
+		}
+	</script>
+</body>
+</html>

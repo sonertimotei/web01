@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>LIVERPOOL FC Premier League</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="http://code.createjs.com/createjs-2013.05.14.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.1/TweenMax.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="style.css" rel="stylesheet">
+    <script src="newsapi.js"></script>
+    <script src="myscript.js"></script>
+</head>
+<body onLoad="init();">
+ 
+<nav class="navbar navbar-expand-sm navbar-light navbar-custom sticky-top" data-toggle="affix">
+    <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
+        <a class="navbar-brand" id="logo"><img src="img/logo.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="navbarsExample">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a id="Home" class="nav-link active" >Home</a>
+                </li>
+                <li class="nav-item">
+                    <a id="Squad" class="nav-link" >Squad</a>
+                </li>
+                <li class="nav-item">
+                    <a id="Match" class="nav-link" >Match</a>
+                </li>
+                 
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+
+
+
+
+
+<!--- Image Slider -->
+<div id="imgslider" class="container ">
+	<div class="container">
+		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img class="d-block w-100" src="img/background.png" alt="First slide">
+                  <div class="carousel-caption">
+                   <h1 class="display-2">LIVERPOOL FC</h1> 
+                   <h3 class="display-5">Premier League</h3>
+                   </div>                  
+				</div>
+
+				<div class="carousel-item">
+					<img class="d-block w-100" src="img/background2.png" alt="Second slide">
+                        <div class="carousel-caption">
+                   <h2>You'll Never Walk Alone</h2> 
+                   </div>                  
+				</div>
+
+				<div class="carousel-item">
+					<img class="d-block w-100" src="img/background3.png" alt="Third slide">
+                    <div class="carousel-caption">
+                   <h2>Poetry in Motion</h2> 
+                   </div>   
+				</div>
+
+			</div>
+
+			<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</div>
+</div>
+
+
+
+<!--- Jumbotron -->
+<div id="jumbotron" class="jumbotron jumbotron-fluid">
+<div class="container">
+	<div class="col">
+     <h1 class="display-4">Feature News</h1>
+     <p class="lead"> Inside Anfield: Behind the scenes of LFC Legends 3-2 Milan</p>
+     <hr class="my-4">
+    <p class="font-weight-normal"> Steven Gerrard rolled back the years by scoring a last-minute, Kop-end winner for Liverpool FC Legends versus Milan Glorie on Saturday...</p>
+       <div class="collapse" id="collapseExample">
+  <p>
+    And the latest edition of Inside Anfield takes you behind the scenes of a memorable afternoon that raised vital funds for LFC Foundation, the club's official charity.
+
+LFCTV GO's cameras were granted access throughout the stadium as the likes of Gerrard, Jamie Carragher and Robbie Fowler defeated a team containing icons such as Andrea Pirlo, Kaka and Cafu 3-2 in dramatic fashion.
+
+Watch the exclusive footage they captured in the video below...
+  <p>
+  <div class="embed-responsive embed-responsive-16by9">
+  			<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/YHWCPE42uQY" allowfullscreen></iframe>
+		</div>
+        
+</div>
+<br>
+          <button class="btn btn-dark btn-lg" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    More
+  </button>
+    </div>
+</div>
+</div>
+
+<div id="matchfeature" class="container">
+<div class="matchresult">
+<center><h1 class="display-2">Latest Match Result</h1>
+<img src="img/Matchinfo.png"></center>
+</div>
+</div>
+<br>
+
+<!--- MVP title Section -->
+<div id="mvpheader" class="container-fluid padding">
+<div class="row text-center padding">
+	<div class="col-12">
+    	<h1 class="display-4">Man of the Match</h1>
+    </div>
+    <hr>
+</div>
+</div>
+
+
+
+<!--- MVP Players-->
+<div id="mvp" class="container">
+  <div class="card-deck">
+  
+     <div class="card mb-4">
+        <img class="card-img-top img-fluid" src="img/p19.png" alt="Card image" >
+             <div class="card-body">
+              <h4 class="card-title">Sadio Mane</h4>
+              <h3>10</h3>
+              <p class="card-text"><b>Position:</b> Forward
+              <br>
+              <b>Nationality:</b> Senegal
+              </p>
+           
+            </div>
+  </div>
+     
+     <div class="card mb-4">
+        <img class="card-img-top img-fluid" src="img/p10.png" alt="Card image" >
+            <div class="card-body">
+              <h4 class="card-title">James Milner</h4>
+              <h3>7</h3>
+              <p class="card-text"><b>Position:</b> Midfielder
+              <br>
+              <b>Nationality:</b> England
+              </p>
+  
+            </div>
+     </div>
+     	
+       <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+       <div class="card mb-4">
+        <img class="card-img-top img-fluid" src="img/p18.png" alt="Card image" >
+            <div class="card-body">
+              <h4 class="card-title">Mohamed Salah</h4>
+              <h3>11</h3>
+              <p class="card-text"><b>Position:</b> Forward
+              <br>
+              <b>Nationality:</b> Egypt
+              </p>
+  
+            </div>
+     </div>
+     
+       <div class="card mb-4">
+       	 <div class="w-100 d-none d-md-block d-lg-none"><!-- wrap every 3 on md--></div>
+            <img class="card-img-top img-fluid" src="img/p17.png" alt="Card image" >
+         <div class="card-body">
+              <h4 class="card-title">Roberto Firmino</h4>
+              <h3>9</h3>
+              <p class="card-text"><b>Position:</b> Forward
+              <br>
+              <b>Nationality:</b> Brazil
+              </p>
+
+            </div>
+</div>
+</div>
+
+
+<hr class="my-4">
+</div>
+
+<!--- Video and News-->
+<div id="VND" class="container-fluid padding">
+<div class="row text-center padding">
+	<div class="col-12">
+    	<h2>Match Highlights </h2>
+        <div class="embed-responsive embed-responsive-16by9">
+  			<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/FQ6BeNdC_oQ" allowfullscreen></iframe>
+		</div>  
+     </div>
+ </div>
+</div>
+
+
+<div id="matchheader" class="container-fluid hidden" >
+<div class="row text-center">
+	<div class="col-12">
+    	<h1 class="display-4">Match info</h1>
+    </div>
+</div>
+</div>
+
+<div id="matchinfo" class="container-fluid hidden" >
+  <div class="row">
+    <div class="col-xl-4" style="border:1px solid #cecece;">
+    <h4> Past Matches </h4>
+    <img src="img/matchLM1.png" class = "img-responsive" width = "100%" >
+    <img src="img/matchLM2.png" class = "img-responsive" width = "100%" >
+    <img src="img/matchLM3.png" class = "img-responsive" width = "100%" >
+    <img src="img/matchLM4.png" class = "img-responsive" width = "100%" >
+    <img src="img/matchLM5.png" class = "img-responsive" width = "100%" >
+    </div>
+    
+    <div class="col-xl-4" style="border:1px solid #cecece;">
+    <h4> Upcoming </h4>
+    <img src="img/matchCM1.png" class = "img-responsive" width = "100%"  >
+    <img src="img/matchCM2.png" class = "img-responsive" width = "100%"  >
+    <img src="img/matchCM3.png" class = "img-responsive" width = "100%"  >
+    <img src="img/matchCM4.png" class = "img-responsive" width = "100%"  >
+    <img src="img/matchCM5.png" class = "img-responsive" width = "100%"  >
+    </div>
+    
+    <div class="col-xl-4" style="border:1px solid #cecece;" >
+    <h4> Table </h4>
+    <img  src="img/table.png" class = "img-responsive" width = "100%" >
+    </div>
+    </div>
+</div>
+
+
+<!---Squad info title -->
+<div id="Squadheader" class="container-fluid hidden">
+<div class="row text-center">
+	<div class="col-12">
+    	<h1 class="display-4">Squad Info</h1>
+    </div>
+</div>
+</div>
+
+
+<!--- Row 1 Players -->
+<div id="playerRow1" class="container hidden">
+  <div class="card-deck">
+  
+     <div class="card mb-4">
+        <img class="card-img-top img-fluid" src="img/p15.png" alt="Card image" >
+             <div class="card-body">
+              <h4 class="card-title">Ben Woodburn</h4>
+              <h3>58</h3>
+              <p class="card-text"><b>Position:</b> Forward
+              <br>
+              <b>Nationality:</b> Wales
+              </p>       
+            </div>
+     </div>
+     	
+         <div class="card mb-4">
+        <img class="card-img-top img-fluid" src="img/p2.png" alt="Card image" >
+            <div class="card-body">
+              <h4 class="card-title">Joseph Gomez</h4>
+              <h3>12</h3>
+              <p class="card-text"><b>Position:</b> Defender
+              <br>
+              <b>Nationality:</b> England
+              </p>      
+            </div>
+     </div>
+     
+     
+       <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+       <div class="card mb-4">
+        <img class="card-img-top img-fluid" src="img/p3.png" alt="Card image" >
+             <div class="card-body">
+              <h4 class="card-title">Virgil van Dijk</h4>
+              <h3>4</h3>
+              <p class="card-text"><b>Position:</b> Defender
+              <br>
+              <b>Nationality:</b> Netherlands
+              </p>       
+            </div>
+     </div>
+     
+       <div class="card mb-4">
+       	 <div class="w-100 d-none d-md-block d-lg-none"><!-- wrap every 3 on md--></div>
+        <img class="card-img-top img-fluid" src="img/p4.png" alt="Card image" >
+            <div class="card-body">
+              <h4 class="card-title">Dejan Lovren </h4>
+              <h3>6</h3>
+              <p class="card-text"><b>Position:</b> Defender
+              <br>
+              <b>Nationality:</b> Croatia
+              </p>
+            </div>
+		</div>
+</div>
+</div>
+
+<!--- Row 2 Players -->
+<div id="playerRow2" class="container hidden">
+  <div class="card-deck">
+  
+     <div class="card mb-4">
+        <img class="card-img-top img-fluid" src="img/p5.png" alt="Card image" >
+         <div class="card-body">
+              <h4 class="card-title">Alberto Moreno</h4>
+              <h3>18</h3>
+              <p class="card-text"><b>Position:</b> Defender
+              <br>
+              <b>Nationality:</b> Spain
+              </p>
+
+            </div>
+  </div>
+     
+     <div class="card mb-4">
+        <img class="card-img-top img-fluid" src="img/p6.png" alt="Card image" >
+            <div class="card-body">
+              <h4 class="card-title">Andrew Robertson</h4>
+              <h3>26</h3>
+              <p class="card-text"><b>Position:</b> Defender
+              <br>
+              <b>Nationality:</b> Brazil
+              </p>
+  
+            </div>
+     </div>
+     	
+       <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+       <div class="card mb-4">
+      <img class="card-img-top img-fluid" src="img/p16.png" alt="Card image" >
+            <div class="card-body">
+              <h4 class="card-title">Isaac Christie-Davies</h4>
+              
+              <p class="card-text"><b>Position:</b> Midfielder
+              <br>
+              <b>Nationality:</b> England
+              </p>
+  
+            </div>
+     </div>
+     
+       <div class="card mb-4">
+       	 <div class="w-100 d-none d-md-block d-lg-none"><!-- wrap every 3 on md--></div>
+        <img class="card-img-top img-fluid" src="img/p8.png" alt="Card image" >
+            <div class="card-body">
+              <h4 class="card-title">Trent Alexander-Arnold</h4>
+              <h3>66</h3>
+              <p class="card-text"><b>Position:</b> Defender
+              <br>
+              <b>Nationality:</b> Croatia
+              </p>
+  
+            </div>
+		</div>
+</div>
+</div>
+
+<!--- Row 3 Players -->
+<div id="playerRow3" class="container hidden">
+  <div class="card-deck">
+  
+     <div class="card mb-4">
+        <img class="card-img-top img-fluid" src="img/p9.png" alt="Card image" >
+         <div class="card-body">
+              <h4 class="card-title">Georginio Wijnaldum</h4>
+              <h3>5</h3>
+              <p class="card-text"><b>Position:</b> Midfielder
+              <br>
+              <b>Nationality:</b> Netherlands
+              </p>
+
+            </div>
+  </div>
+     
+     <div class="card mb-4">
+        <img class="card-img-top img-fluid" src="img/p10.png" alt="Card image" >
+            <div class="card-body">
+              <h4 class="card-title">James Milner</h4>
+              <h3>7</h3>
+              <p class="card-text"><b>Position:</b> Midfielder
+              <br>
+              <b>Nationality:</b> England
+              </p>
+  
+            </div>
+     </div>
+     	
+       <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+       <div class="card mb-4">
+        <img class="card-img-top img-fluid" src="img/p11.png" alt="Card image" >
+             <div class="card-body">
+              <h4 class="card-title">Jordan Henderson</h4>
+              <h3>14</h3>
+              <p class="card-text"><b>Position:</b> Midfielder
+              <br>
+              <b>Nationality:</b> England
+              </p>
+           
+            </div>
+     </div>
+     
+       <div class="card mb-4">
+       	 <div class="w-100 d-none d-md-block d-lg-none"><!-- wrap every 3 on md--></div>
+        <img class="card-img-top img-fluid" src="img/p12.png" alt="Card image" >
+            <div class="card-body">
+              <h4 class="card-title">Adam Lallana</h4>
+              <h3>20</h3>
+              <p class="card-text"><b>Position:</b> Midfielder
+              <br>
+              <b>Nationality:</b> England
+              </p>
+  
+            </div>
+		</div>
+</div>
+</div>
+
+<!--- Row 4 Players -->
+<div id="playerRow4" class="container hidden">
+  <div class="card-deck">
+  
+     <div class="card mb-4">
+        <img class="card-img-top img-fluid" src="img/p13.png" alt="Card image" >
+         <div class="card-body">
+              <h4 class="card-title">Fabinho</h4>
+              <h3>3</h3>
+              <p class="card-text"><b>Position:</b> Midfielder
+              <br>
+              <b>Nationality:</b> Brazil
+              </p>
+
+            </div>
+  </div>
+     
+     <div class="card mb-4">
+        <img class="card-img-top img-fluid" src="img/p14.png" alt="Card image" >
+            <div class="card-body">
+              <h4 class="card-title">Naby Keita</h4>
+              <h3>8</h3>
+              <p class="card-text"><b>Position:</b> Midfielder
+              <br>
+              <b>Nationality:</b> Guinea
+              </p>
+  
+            </div>
+     </div>
+     	
+       <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+       <div class="card mb-4">
+        <img class="card-img-top img-fluid" src="img/p1.png" alt="Card image" >
+            <div class="card-body">
+              <h4 class="card-title">Alisson</h4>
+              <h3>13</h3>
+              <p class="card-text"><b>Position:</b> Goalkeeper
+              <br>
+              <b>Nationality:</b> Brazil
+              </p>
+            </div>
+     </div>
+     
+       <div class="card mb-4">
+       	 <div class="w-100 d-none d-md-block d-lg-none"><!-- wrap every 3 on md--></div>
+        <img class="card-img-top img-fluid" src="img/p7.png" alt="Card image" >
+             <div class="card-body">
+              <h4 class="card-title">Joel Matip</h4>
+              <h3>32</h3>
+              <p class="card-text"><b>Position:</b> Defender
+              <br>
+              <b>Nationality:</b> Netherlands
+              </p>
+           
+            </div>
+		</div>
+</div>
+</div>
+
+<!--- Row 5 Players -->
+<div id="playerRow5" class="container hidden">
+  <div class="card-deck">
+  
+     <div class="card mb-4">
+        <img class="card-img-top img-fluid" src="img/p17.png" alt="Card image" >
+         <div class="card-body">
+              <h4 class="card-title">Roberto Firmino</h4>
+              <h3>9</h3>
+              <p class="card-text"><b>Position:</b> Forward
+              <br>
+              <b>Nationality:</b> Brazil
+              </p>
+
+            </div>
+  </div>
+     
+     <div class="card mb-4">
+        <img class="card-img-top img-fluid" src="img/p18.png" alt="Card image" >
+            <div class="card-body">
+              <h4 class="card-title">Mohamed Salah</h4>
+              <h3>11</h3>
+              <p class="card-text"><b>Position:</b> Forward
+              <br>
+              <b>Nationality:</b> Egypt
+              </p>
+  
+            </div>
+     </div>
+     	
+       <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+       <div class="card mb-4">
+        <img class="card-img-top img-fluid" src="img/p19.png" alt="Card image" >
+             <div class="card-body">
+              <h4 class="card-title">Sadio Mane</h4>
+              <h3>10</h3>
+              <p class="card-text"><b>Position:</b> Forward
+              <br>
+              <b>Nationality:</b> Senegal
+              </p>
+           
+            </div>
+     </div>
+     
+       <div class="card mb-4">
+       	 <div class="w-100 d-none d-md-block d-lg-none"><!-- wrap every 3 on md--></div>
+        <img class="card-img-top img-fluid" src="img/p20.png" alt="Card image" >
+            <div class="card-body">
+              <h4 class="card-title">Daniel Sturridge</h4>
+              <h3>15</h3>
+              <p class="card-text"><b>Position:</b> Forward
+              <br>
+              <b>Nationality:</b> England
+              </p>
+  
+            </div>
+		</div>
+</div>
+</div>
+
+
+<div id="game" class="hidden">
+ <h3>Mini Game</h3>
+ <p>Click and match the same image to complete the game</p> 
+<canvas id="gameCanvas" width="800" height="500"></canvas>
+        
+    </canvas>
+</div>
+
+
+
+<!--- Connect -->
+<div class="container-fluid padding">
+ <hr class="my-4">
+<div class="row text-center padding">
+	<div class="col-12">
+    	<h2>Connect</h2>
+    </div>
+    <div class="col-12 social padding">
+    	<a href="https://www.facebook.com/LiverpoolFC"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/lfc"><i class="fab fa-twitter"></i></a>
+        <a href="http://instagram.com/liverpoolfc/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/liverpoolfc?sub_confirmation=1"><i class="fab fa-youtube"></i></a>
+
+</div>
+</div>
+</div>
+
+<!--- Footer -->
+<footer>
+<div class="container-fluid padding">
+<div class="row text-center">
+	<div class="col-md-6">
+		<hr class="light">
+        <p>Contact Us</p>
+         <hr class="light">
+        <p>General enquires: 0151 264 2500</p>
+        <p>Online Retail Store Enquiries - 0151 907 9500</p>
+        <p> Museum and Tour Enquiries - 0151 260 6677</p>
+        </div>
+        <div class="col-md-6">
+      	 <hr class="light">
+         <h5>Address</h5>
+         <hr class="light">
+        <p>Liverpool Football Club</p>
+        <p>Anfield Road</p>
+        <p>Liverpool L4 OTH</p>
+        </div>
+        <div class="col-12">
+        <hr class="light">
+        <h5>&copy; Melvin</h5>
+        </div>
+        </div>
+</div>
+</div>
+</footer>
+
+
+</body>
+</html>
+
